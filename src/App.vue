@@ -25,21 +25,26 @@ export default {
       var isSamsung = sUserAgent.match(/sm-/i) == "sm-";
 
       if(isIphone) {
-        alert('iphone', navigator.userAgent.toLowerCase())
+        alert(sUserAgent)
+        alert('iphone')
         console.log('iphone')
       } else if (bIsAndroid) {
         if(isHuawei) {
-          alert('huawei', navigator.userAgent.toLowerCase())
+          alert(sUserAgent)
+          alert('huawei')
           console.log('huawei')
         } else if(isSamsung) {
-          alert('samsung', navigator.userAgent.toLowerCase())
+          alert(sUserAgent)
+          alert('samsung')
           console.log('samsung')
         } else {
-          alert('android', navigator.userAgent.toLowerCase())
+          alert(sUserAgent)
+          alert('android')
           console.log('android')
         }
       } else {
-        alert('pc', navigator.userAgent.toLowerCase())
+        alert(sUserAgent)
+        alert('pc')
         console.log('pc')
       }
     }
